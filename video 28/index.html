@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> <!--box1 postion absolute is relative to this ancestor because it the old or we can say nearest ancestor-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            /* position: absolute; position: absolute removes the element from the normal document flow. The element is positioned relative to its nearest ancestor whose position is not static. If no such ancestor exists, it is positioned relative to the initial containing block (usually the viewport) */
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            /* position: relative; */
+            /* z-index: 4; */
+            background-color: aqua;
+            /* position: sticky;
+            top:0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+        }
+        .box2{
+            /* top: -45px;
+            left: 34px;
+            position: relative; */
+            background-color: aquamarine;
+        }
+        .box3{
+            background-color: bisque;
+
+            /* position: fixed;
+            bottom: 0px;
+            left: 7vw; */
+        }
+        .box4{
+            background-color: purple;
+        }
+
+
+        .box{
+            height: 200px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .parent{
+            
+            /* Exception  transform, filter, or perspective properties can also make an element as positioned */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            
+            /* position: relative; here i give postion absolute to .parent so the box 1 is now relative to to the .parent */
+            border: 2px solid darkgreen;
+            padding: 45px;
+            margin: 35px;
+            box-shadow: 0px 0px 15px #71a132;
+        }
+    </style>
+</head>
+<body> <!-- second ancestor if it have position element -->
+    <div class="parent"> <!--First ancestor if it have position element -->
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    
+</body>
+</html>
