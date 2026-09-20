@@ -1,0 +1,9 @@
+### Exercise 2 – Video 20
+
+The Exercise 2 given in Video 20, which is related to 
+
+**write html and css code to style a paragraph inside a div  which contains 5 other paragraph .
+ The first paragraph must have bacground color yellow and text color red. The other paragraph background color must be blue and text color white
+**,
+
+ has already been completed by me earlier. Therefore, I do not need to solve this exercise again.
