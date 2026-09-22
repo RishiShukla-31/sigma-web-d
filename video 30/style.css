@@ -1,0 +1,36 @@
+:root{
+    --color: rgb(61, 105, 61);
+    --seccolor: rgb(149, 100, 83);
+    --textcolor: rgb(58, 40, 40);
+    --deafpad: 23px;
+    --deafop: 0.9;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+    color: var(--textcolor);
+}
+
+ul{
+    display: flex;
+}   
+
+ul li{
+    opacity: var(--deafop);
+    list-style: none;
+    padding: var(--deafpad);
+    border: 2px solid var(--seccolor);
+}
+
+ul li:first-child{
+    --color: rgb(13, 145, 63);
+    background-color: var(--color, blue);
+}
+
+.container{
+    background-color: var(--seccolor);
+    color: var(--textcolor);
+}
