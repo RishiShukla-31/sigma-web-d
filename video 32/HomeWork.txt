@@ -1,0 +1,8 @@
+### Exercise 3 – Video 29
+
+The Exercise 3 given in Video 29, which is related to 
+
+** write html and css code to style <!-- Card.png is a file which contans a card Image. Write html and css code to design card -->
+**,
+
+ has already been completed by me earlier. Therefore, I do not need to solve this exercise again.
