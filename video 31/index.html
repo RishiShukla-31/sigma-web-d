@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body{
+            background-color: maroon;
+        }
+
+        /* @media screen and (orientation: landscape){ */
+        @media screen and (orientation: portrait){
+            body{
+                border: 5px solid purple;
+            }
+        }
+
+        @media only screen and (max-width: 455px){
+        /* @media only screen and (min-width: 455px){ */
+            body{
+                background-color: blue;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .boxes{display: flex;}
+
+        .box{
+            background-color: steelblue;
+            width: 100%;
+            max-width: 344px;
+            height: 344px;
+            padding: 3px;
+            margin: 3px;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        hey i am maroon body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
