@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flesbox</title>
+    <style>
+        .container{
+            border: 2px solid darkred;
+            display: flex;
+            height: 80vh;
+            /* padding: 20px; */
+            /* justify-content: center; */
+            align-items: center; /*align-items: center; is used to when there is only one line*/
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            background-color: darkolivegreen;
+            /* flex-wrap: wrap;  */
+            /* flex-wrap: wrap-reverse; */
+            /*align-content: center;*/ /*------*/ /*align-content: center; is used when there are more than one line*/
+            /* Also there is no justify-items in flexbox */
+            /* flex-flow: row wrap;*/
+            
+            /*Gaps*/
+            /* gap: 40px; */
+            /* row-gap: 20px;
+            column-gap: 40px; */
+            
+            gap: 40px 10px; /*Short hand of rows and column */
+        }
+        .item{
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            /* margin: 2px; */
+            border: 2px solid yellowgreen;
+            background-color: darkgreen;       
+        }
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        /* .item1{
+            flex-grow: 2;
+            flex-shrink: 2;
+        } */
+
+        /* .item4{
+            flex-shrink: 2;
+        } */
+
+        .item1{
+            /* align-self: flex-start; */
+            align-self: flex-end;
+        }
+
+        .item3{
+            align-self: flex-sta÷rt;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item item4 order-1">4</div>
+            <!-- <div class="item item4">4</div> -->
+            <div class="item item3"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>
