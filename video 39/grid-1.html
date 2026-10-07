@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+
+        body{
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+        .container{
+            width: 50vw;
+            height: 80vh;
+            /* height: 90vh; */
+            border: 2px solid darkred;
+            display: grid;
+            /* gap: 30px; */
+            row-gap: 20px;
+            column-gap: 30px;
+            /* grid-template-columns: [phela]120px [doosra]100px [t];  */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, minmax(100px,  1fr)); */
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(2, 80px);
+            /* grid-template-rows: 1fr 2fr 1fr; */
+            /* item use for cells */
+            justify-items: center;
+            align-items: center;
+            /* content use for container */
+            justify-content: center;
+            align-content: center;
+        }
+        .item{
+            border: 2px solid yellowgreen;
+            height: 50px;
+            width: 50px;
+            /* background-color: darkslategray; */
+        }
+
+        /* .item-4{
+            grid-row: 1/2;
+            grid-column: phela/t;
+        } */
+        /* .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        } */
+
+        .item-2{
+            align-self: start;
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
