@@ -1,0 +1,7 @@
+### Exercise 6 – Video 41
+
+The Exercise 6 given in Video 41, which is related to 
+
+** Navbar using Flexbox **,
+
+ has already been completed by me earlier. Therefore, I do not need to solve this exercise again.
