@@ -1,0 +1,115 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+            .box{ 
+                width: 150px;
+                height: 150px;
+                margin: 50px auto;
+                background: rgb(201, 120, 120);
+                border: 2px solid rgb(61, 61, 91);
+                /* transition: all 2s ease;  short hand*/
+                transition: width 2s ease, height 2s ease, backgorund 2s ease ;
+            }
+
+        .box:hover{
+            width: 300px;
+            height: 100px;
+            background: rgb(170, 45, 0);
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic CSS Transition</h2>
+    <div class="box">
+    </div>
+    <p>hover the box to see it grow in size and color <b>smoothly</b> over 2 second.</p>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            background-color: rgb(1, 77, 77);
+            height: 80vh;
+            width: 30vw;
+
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            /* background-color: rgb(10, 219, 149); */
+            /*
+            animation: RishiAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: cubic-bezier(0, 0, 0, 0.96);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: RishiAnimation 3s ease 1s 1 backwards, 
+                       Percentage 2s ease-in-out 3s 1; 
+        }
+
+        @keyframes RishiAnimation {
+            from{
+                background-color: red;
+                
+            }
+            to{
+                background-color: yellowgreen;
+                transform: translateX(1000px);
+                
+            }
+            
+        }
+
+        @keyframes Percentage {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(220deg);
+            }
+            50%{
+                transform: rotate(290deg);
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>
