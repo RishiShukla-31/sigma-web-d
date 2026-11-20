@@ -1,0 +1,22 @@
+# Video 51 – Introduction to Figma
+
+## What is Figma?
+- Figma is a web-based UI/UX design tool.
+- It is used to create website layouts, mobile app designs, and prototypes.
+- It helps designers and developers visualize a website before coding.
+
+## What I Learned
+1. Introduction to Figma.
+2. Understanding UI (User Interface).
+3. Understanding UX (User Experience).
+4. Exploring the Figma workspace and tools.
+5. Creating and designing website layouts.
+6. Understanding how designers plan website structures.
+
+## Why is Figma Useful for Web Developers?
+- Helps understand website design before development.
+- Provides ideas for layouts, colors, fonts, and spacing.
+- Makes it easier to convert designs into HTML, CSS, and JavaScript.
+
+## Key Takeaway
+Figma helps developers understand the visual structure of a website before starting the actual coding process.
