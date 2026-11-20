@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter</title>
+    <style>
+        body{
+            background-color: rgb(119, 85, 85);
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        img{
+            /* filter: blur(10px); */
+            /* filter: contrast(200%); */
+        }
+        .img1{
+            filter: brightness(200%) contrast(0.5);
+            /* filter: brightness(200%); */
+            /* filter: blur(10px); */
+            border: 2px solid black;
+            box-shadow: 0px 0px 20px #8c3400;
+        }
+        .img2{
+            /* filter: blur(10px); */
+            border: 2px solid black;
+            /* box-shadow: 0px 0px 30px #534064; */
+            /* filter: grayscale(100%); */
+            /* filter: sepia(100%); */
+            /* filter: hue-rotate(40deg); */
+            /* filter: drop-shadow(0px 0px 20px purple); it will simple drope the shadow nothing else */
+            /* filter: invert(1);  Negative Image */
+            /* filter: opacity(100px); transparnace of the light through image */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://i.pinimg.com/736x/43/f0/1b/43f01b72b395e984f7eb65e4b7a0279a.jpg" alt="">
+        <img class="img2" src="https://i.pinimg.com/736x/d2/a8/62/d2a8621799dfbfb64a3f3f02f09552fd.jpg" alt="">
+    </div>
+</body>
+</html>
